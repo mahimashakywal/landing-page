@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       .main{
+         height: 100vh;
+         width: 100vw;
+         border-radius: 4%;
+         display: flex;
+         flex-direction: column;
+       }
+       .logo{
+          height: 10%;
+          width: 100%;
+          background-color: blanchedalmond;
+          text-align: center;
+          padding-top: 2%;
+        }
+        .forms{
+           height: 90%; 
+           width: 100%;
+        }
+        form{
+           display: flex;
+           flex-direction: column;
+           gap: 10px;
+           align-items: flex-start;
+           padding-left: 2%;
+           padding-top: 2%;
+        }
+        .first{
+            display: flex;
+            flex-direction: column;
+        }
+        label{
+             width:20vw;
+             font-size: large;
+             font-weight: bold;
+        }
+        input{
+            height: 5vh;
+            width: 40vw;
+        }
+        button{
+           height: 5vh;
+           width: 20vw;
+           background-color: darkgray;
+        }
+        @media screen and (min-width:430px){
+            .first{
+                display:inline-block;
+            }
+        }
+     </style>
+</head>
+<body>
+   <div class="main">
+        <div class="logo">
+           <h1>Login Form</h1> 
+        </div>
+        <div class="forms">
+        <form action="">
+           <div class="first">
+            <label for="em">Email:</label> 
+           <input type="email" id="em">
+           </div>
+           <div class="first">
+            <label for="pass">Password:</label>
+           <input type="password">
+           </div>
+           <button>Login</button>    
+        </form>
+        </div>
+   </div>
+   
+</body>
+</html>

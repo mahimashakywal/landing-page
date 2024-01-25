@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .First-child{
+            border: none;
+            width: 33%;
+            font-size: 1.2rem;
+            text-align: center;
+            height: 100%;
+            padding: 0;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8%;
+            align-content: flex-start;
+        }
+        li{
+            padding: 5%;
+            border-bottom: 1px solid white;
+        }
+        .parent{
+            border: 2px solid black;
+            height: 71vh;
+            width: 90vw;
+            background-color: cadetblue;
+            display: flex;
+            padding: 0%;
+            
+        }
+        .second-child{
+            border: 2px solid black;
+            flex-wrap: wrap;
+            width: 33%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            gap: 2%;
+            border-bottom: none;
+            border-top: none;
+        }
+        div{
+            border: 2px solid black;
+            height: 100px;
+            width: 120px;
+        }
+        img{
+            height: 50%;
+            width: 34%;
+            align-self:center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="First-child">
+        <h2>LIST</h2>
+         <ul type="none">
+            <li><strong>One</strong></li>
+            <li><strong>Two</strong></li>
+            <li><strong>Three</strong></li>
+            <li><strong>Four</strong></li>
+            <li><strong>Five</strong></li>
+            <li><strong>Six</strong></li>
+            <li><strong>Seven</strong></li>
+            <li><strong>Eight</strong></li>
+            <li><strong>Nine</strong></li>
+            <li><strong>Ten</strong></li>
+        </ul>
+    </div>
+        <div class="second-child">
+           <div><h1>1</h1></div>
+           <div><h1>2</h1></div>
+           <div><h1>3</h1></div>
+           <div><h1>4</h1></div>
+           <div><h1>5</h1></div>
+        </div>
+        <img src="./launch" alt="">
+    </div>
+    
+</body>
+</html>

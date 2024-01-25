@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-size: cover;
+            background-color:rgb(147, 122, 160) ;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        h1,p{
+            color: white;
+        }
+        div{
+            height: 100vh;
+            width: 40vw;
+            background-color: rgb(4, 4, 67);
+            align-self: center;
+            padding-top: 2%;
+            padding-left: 2%;
+            border-radius: 1%;
+            color: white;
+            text-align: left;
+        }
+        .broad{
+            width: 93%;
+        }
+        button{
+            height: 30px;
+            width: 94.5%;
+            background-color: rgb(54, 234, 54);
+        }
+        input{
+            text-transform: uppercase;
+        }
+        input:hover{
+            background-color: rgb(61, 63, 58) ;
+        }
+        .accesskey{
+            text-decoration: overline;
+        }
+    </style>
+</head>
+<body>
+    <h1>freeCodeCamp Survey Form</h1>
+    <p>Thank you for taking the time to improve the platfrom</p>
+    <div>
+        <form action="frmSurvey" method="get" autocomplete="off">
+            <label for="name"><span class="accesskey">N</span>ame</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" class="broad" tabindex="1" required accesskey="n"><br><br>
+            <label for="mail">Email</label><br>
+            <input type="email" id="mail" name="mail" placeholder="Enter your email" class="broad"  tabindex="2"><br><br>
+            <label for="age">Age</label><br>
+            <input type="number" id="age" name="age" placeholder="Age" class="broad"  tabindex="3"><br><br>
+            <label for="role">Which option best descries your current <span class="accesskey">r</span>ole?</label><br>
+            <input list="role" placeholder="Select current role" class="broad" accesskey="r" tabindex="4">
+            <datalist id="role">
+                <option value="Front-end developer" tabindex="5">Front-end developer</option>
+                <option value="Back-end developer" tabindex="6">Back-end developer</option>
+                <option value="Data analyst" tabindex="7">Data analyst</option>
+                <option value="Data scientist" tabindex="8">Data scientist</option>
+                <option value="Android developer" tabindex="9">Android developer</option>
+            </datalist><br><br>
+            <label for="">Would you recommend freeCodeCamp to a friend?</label><br>
+            <input type="radio" id="yes" name="recommend" value="yes" tabindex="10">
+            <label for="yes">Definitely</label><br>
+            <input type="radio" id="Maybe" name="recommend" value="Maybe" tabindex="11">
+            <label for="Maybe">Maybe</label><br>
+            <input type="radio" id="notsure" name="recommend" value="notsure" tabindex="12">
+            <label for="notsure">Not sure</label><br><br>
+            <label for="feature">What is your favorite feature of freeCodeCamp?</label><br>
+            <input list="feature" placeholder="Select an option" class="broad" tabindex="13">
+            <datalist id="feature">
+                <option value="Front-end developer" tabindex="14">Front-end developer</option>
+                <option value="Back-end developer" tabindex="15">Back-end developer</option>
+                <option value="Data analyst" tabindex="16">Data analyst</option>
+                <option value="Data scientist" tabindex="17">Data scientist</option>
+                <option value="Android developer" tabindex="18">Android developer</option>
+            </datalist><br><br>
+            <label for="">What would you like to see improved?(check all that apply)</label><br>
+            <input type="checkbox" id="Front-end" name="Front-end" tabindex="19">
+            <label for="Front-end">Front-end Projects</label><br>
+            <input type="checkbox" id="Back-end" name="Back-end" tabindex="20">
+            <label for="Back-end">Back-end Projects</label><br>
+            <input type="checkbox" id="videos" name="videos" tabindex="21">
+            <label for="videos">Videos</label><br>
+            <input type="checkbox" id="wiki" name="wiki" tabindex="22">
+            <label for="wiki">Wiki</label><br>
+            <input type="checkbox" id="Forum" name="Forum" tabindex="23">
+            <label for="Forum">Forum</label><br><br>
+            <label for="suggetions">Any comments or suggetions?</label><br>
+            <textarea name="suggetions" id="suggetions" cols="76" rows="5" placeholder="Enter yoour comments here.." tabindex="24"></textarea><br><br>
+            <button tabindex="25">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

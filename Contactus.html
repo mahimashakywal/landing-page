@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body{
+        background-image: url(./Blue);
+        background-size: cover;
+        padding: 15%;
+      }
+      .outer{
+        border: 1px solid rgb(199, 208, 251);
+        height: 80vh;
+        width: 50vw;
+        background-color: rgb(246, 251, 252);
+        border-radius: 2%;
+        padding: 3%;
+      }
+      .one{
+        border-radius: 2%;
+        display: flex;
+        flex-direction: column;
+      }
+      .two{
+        height: 30px;
+        background-color: white;
+        border-radius: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+      }
+      a{
+        text-decoration: none;
+        color: black;
+      }
+      .three{
+        height: 550px;
+        background-image: url(./blue1);
+        background-size: cover;
+        border-radius: 2%;
+        color: white;
+        padding-left: 3%;
+        padding-right: 3%;
+      }
+      input{
+        width: 46%;
+      }
+      .four{
+        height: 10%;
+        width: 30%;
+        background-color: rgb(215, 211, 211);
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7%;
+      }
+      button{
+        height: 5%;
+        background-color: rgb(228, 94, 94);
+        align-self: center;
+      }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        
+        <div class="one">
+            <div class="two"> 
+                <a href="">Create</a>
+                <a href="">Set up</a>
+                <a href="">Publish</a>
+                <a href="">Results</a>
+            </div>
+            <div class="three">
+                <h1>Contact Us</h1>
+                <p>we'd love to get in touch and learn more about you, so send us a message and we'll reply as fast as we can.</p>
+                <hr>
+                <br><br>
+                <form action="frmContact">
+                <label for="">Your name:</label><br>
+                <input type="text" placeholder="First">
+                <input type="text" placeholder="Last"><br><br>
+                <label for="">Email:</label><br>
+                <input type="mail"><br><br>
+                <label for="">Your message:</label><br>
+                <textarea name="" id="" cols="90" rows="5"></textarea><br><br>
+                <label for="">Verification*</label><br>
+                <div class="four">
+                   <input type="checkbox" style="width: 10%;">I'm not a robot
+                   <i class="fa-solid fa-arrows-spin"></i>
+                </div><br>
+                <button>SEND</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

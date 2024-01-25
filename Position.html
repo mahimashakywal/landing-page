@@ -1,0 +1,145 @@
++<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+            box-sizing: border-box;
+        }
+    body{
+        padding: 0%;
+        height: 100vh;
+        width: auto;
+    }
+    .header{
+        background-color: darksalmon;
+        text-align: center;
+        height:15vh;
+        width: 100%;
+        padding-top: 2vh;
+       
+     } 
+      
+      h1,h3{
+        text-align: center;
+      }
+
+      h3:hover{
+        font-size: x-large;
+      }
+      
+      #section1{
+        width:10%;
+        background-color:coral;
+        top: 15vh;
+        height: 75vh;
+        float: left;
+        overflow: scroll;
+      }
+      #section2{
+        background-color:cornsilk;
+        float: right;
+        width: 90%;
+        height: 75vh;
+      }
+
+      .footer{
+        background-color: darkblue;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 99%;
+      }
+
+    .parent{
+        border: 2px solid black;
+        height: 94%;
+        width: 100%;
+        background-color: rgb(230, 245, 193);
+        text-align: center;
+        position: relative;
+    }
+
+    .child-one{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(215, 180, 127);
+        height: 25%;
+        width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        border-top: none;
+        border-left: none;
+    }
+
+    .child-two{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:rgb(215, 180, 127);
+        height: 25%;
+        width: 10%;
+        border: 2px solid black;
+        border-top: none;
+        border-right: none;
+    }
+
+    .child-three{
+        position: absolute;
+        bottom: 0;
+        background-color:rgb(215, 180, 127);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 15%;
+        border-top: 2px solid black;
+        
+    }
+</style>
+</head>
+<body>
+    <div class="">
+      <div class="header"><h1>INDEX</h1></div>
+      <section id="section1">
+        <h1>TASKS</h1>
+        <strong>TABLES</strong>
+      <ol>
+        <li><h3><a href="./Table1.html" target="_self">Table 1</a></h3></li>
+        <li><h3><a href="./Table2.html" target="_self">Table 2</a></h3></li>
+        <li><h3><a href="./Table3.html" target="_self">Table 3</a></h3></li>
+        <li><h3><a href="./Table4.html" target="_self">Table 4</a></h3></li>
+        <li><h3><a href="./Table5.html" target="_self">Table 5</a></h3></li>
+        <li><h3><a href="./Table6.html" target="_self">Table 6</a></h3></li>
+        <li><h3><a href="./Table7.html" target="_self">Table 7</a></h3></li> 
+        <li><h3><a href="./Position.html" target="_self">Position</a></h3></li>  
+        <li><h3><a href="./Card.html" target="_self">Flexbox</a></h3></li>
+        <li><h3><a href="./Navbar.html" target="_self">Navbar</a></h3></li>
+        <li><h3><a href="./Example1.html" target="_self">Box1</a></h3></li>
+        <li><h3><a href="./Example2.HTML" target="_self">Box2</a></h3></li>
+        <li><h3><a href="./Example3.html" target="_self">Box3</a></h3></li>
+      </ol>
+      </section>
+
+      <section id="section2">
+        <div class="parent">
+            <h1>Parent</h1>
+            <div class="child-one"><h2>1</h2></div>
+            <div class="child-two"><h2>2</h2></div>
+            <div class="child-three"><h2>3</h2></div>
+            </div>
+      </section>
+
+      <div class="footer"><h1>Thanks for Visiting!!</h1></div>
+
+    </div>
+</body>
+</html>

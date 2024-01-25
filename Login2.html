@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-image:url(./cityview);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top :5% ;
+    }
+    div{
+        height: 70vh;
+        width: 40vw;
+        border-radius: 2%;
+        text-align: center;
+        box-shadow: 5px 5px 5px 5px black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 6%;
+    }
+    .broad{
+       height: 10%;
+       width: 80%;
+       border-radius: 1%;
+    }
+    button{
+      height: 10%;
+      width: 80%;
+      color: white;
+      background-color: rgb(60, 228, 60);
+      border-radius: 1%;
+    }
+    a{
+        color: rgb(190, 186, 186);
+    }
+    .small{
+        height: 10%;
+        width: 27%;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Create account</h1>
+        <form action="frmLogin2" method="post">
+             <input type="email" name="mail" placeholder="Email" class="broad" pattern="abc@gmail.com" required><br><br>
+             <input type="password" name="pass" placeholder="Password"class="broad" minlength="8" required><br><br>
+             <input type="checkbox" name="terms" id="terms" required>
+             <label for="terms">I have read and agree to the <a href="">Terms of Use</a>and <a href="">Privacy Policy</a></label><br><br>
+             <button>Create Account</button><br><br>
+             <p>------------------------------------- or sign up with social media ---------------------------------------</p><br><br>
+             <button class="small" style="background-color: rgb(80, 80, 186);">Facebook</button>
+             <button class="small" style="background-color: rgb(7, 214, 241);">Twitter</button>
+             <button class="small" style="background-color: rgb(160, 19, 19);">Google</button><br><br>
+             <p>Already have an account?<a href="">Sign in</a></p>
+        </form> 
+    </div>
+</body>
+</html>

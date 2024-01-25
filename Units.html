@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 20px;
+        }
+        ul{
+            font-size: 2rem;
+        }
+        .first{
+            border: 1px solid black;
+            height: 400px;
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aquamarine;
+        }
+        .second{
+            border: 1px solid black;
+            height: 50%;
+            width: 50%;
+            background-color: bisque;
+        }
+        .vh{
+            border: 2px solid black;
+            height: 30vh;
+            width: 50vw;
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>THIS IS THE FIRST LINE.</li>
+        <li type="none">
+            <ul>
+                <li type="disc">THIS IS THE SECOND LINE.</li>
+                <li type="none">
+                    <ul>
+                        <li type="disc">THIS IS THE THIRD LINE.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="first">
+        <div class="second">
+
+        </div>
+    </div>
+
+    <div class="vh">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates autem numquam necessitatibus repudiandae ea eveniet 
+        reiciendis voluptas assumenda ducimus sequi ratione, itaque eligendi veritatis magnam, est, distinctio quasi nobis officia.</p>
+    </div>
+</body>
+</html>
